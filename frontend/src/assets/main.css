@@ -1,0 +1,56 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  font-family: "Rubik";
+}
+
+html:not([data-scroll='0']) {
+  nav {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: var(--color-accent-text);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-accent-text-hover);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+.rubik-400 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
